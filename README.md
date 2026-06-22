@@ -39,3 +39,20 @@ Additionally, the successful deployment of the sample **Nginx** application demo
 
 <img width="1439" height="884" alt="Screenshot 2026-06-20 at 13 43 59" src="https://github.com/user-attachments/assets/e1fccf8b-2d54-4aaa-8d17-24ea1de69b14" />
 
+### Screenshot of AWS ALB
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 15 34" src="https://github.com/user-attachments/assets/9d2495a8-6373-485b-be01-c6ec64a2fe55" />
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 16 10" src="https://github.com/user-attachments/assets/0a3e1b5c-cc6e-4de9-aa2c-0b1f5c149771" />
+
+
+### Screenshot of ALB DNS name in a browser
+
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 05 51" src="https://github.com/user-attachments/assets/63838b9b-426b-4c7c-82f9-de09a7d4c7a0" />
+
+### Screenshot of Targets Group
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 23 21" src="https://github.com/user-attachments/assets/09bf252d-4e0d-4b13-adc4-a6c092906ac4" />
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 21 58" src="https://github.com/user-attachments/assets/9068cbbb-fa1a-4245-ac99-fb4c59e71224" />
+
+### Screenshot of Terminal pods & ingress
+<img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 28 17" src="https://github.com/user-attachments/assets/e3f5c8a2-9cb0-4d97-9ca0-df99022a061c" />
+
+
