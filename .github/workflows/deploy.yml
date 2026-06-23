@@ -1,0 +1,44 @@
+name: Deploy to Amazon EKS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Install kubectl
+        uses: azure/setup-kubectl@v4
+
+      - name: Update kubeconfig
+        run: |
+          aws eks update-kubeconfig \
+            --region ${{ secrets.AWS_REGION }} \
+            --name ${{ secrets.EKS_CLUSTER_NAME }}
+
+      - name: Verify Cluster
+        run: kubectl get nodes
+
+      - name: Deploy Ingress
+        run: |
+          kubectl apply -f kubernetes/ingress/alb-ingress.yaml
+
+      - name: Verify Application
+        run: |
+          kubectl get pods -n retail-app
+          kubectl get svc -n retail-app
+          kubectl get ingress -n retail-app
