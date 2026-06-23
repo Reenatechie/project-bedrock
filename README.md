@@ -55,4 +55,9 @@ Additionally, the successful deployment of the sample **Nginx** application demo
 ### Screenshot of Terminal pods & ingress
 <img width="1439" height="900" alt="Screenshot 2026-06-22 at 17 28 17" src="https://github.com/user-attachments/assets/e3f5c8a2-9cb0-4d97-9ca0-df99022a061c" />
 
+### Screenshot of GitHub Actions CI/CD pipeline
+
+<img width="1439" height="900" alt="Screenshot 2026-06-23 at 06 50 54" src="https://github.com/user-attachments/assets/f63d4ca7-21ac-4a52-a965-d0f54961e1ae" />
+
+
 
